@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML </title>
+</head>
+<body>
+    <h1>Html Forms</h1>
+    <h2>Example</h2>
+    <form>
+        <fieldset>
+            <legend>Kişisel</legend>
+            <div>
+                <label for="fullname">İsim ve Soy isim</label>
+                <input type="text" id="fullname">
+            </div>
+            <div>
+                <label for="gender">Cinsiyet</label>
+                <input type="radio" id="gender" value="male"> Erkek
+                <input type="radio" id="gender" value="famale"> Kadın
+            </div>
+            <div>
+                <label for="birthdays">Doğum Tarihi</label>
+                <input type="date" id="birthdays">
+            </div>
+            <div>
+                <label for="city">Şehir</label>
+                <select id="city">
+                    <option value="">Seçiniz..</option>
+                    <optgroup label="Marmara">
+                        <option value="İstanbul">İstanbul</option>
+                        <option value="Edirne">Edirne</option>
+                    </optgroup>
+                    <optgroup label="Ege">
+                        <option value="İzmir">İzmir</option>
+                        <option value="Uşak">Uşak</option>
+                    </optgroup>
+                    <optgroup label="Karadeniz">
+                        <option value="Samsun">Samsun</option>
+                        <option value="Ordu">Ordu</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label>Hobiler:</label>
+                <input type="checkbox" name="Hobbies[]" value="spor" > Spor
+                <input type="checkbox" name="Hobbies[]" value="music" > Müzik
+                <input type="checkbox" name="Hobbies[]" value="read" > Okumak
+                <input type="checkbox" name="Hobbies[]" value="Game" > Oyun
+            
+            </div>
+            <div>
+                <Label form="cv">CV:</Label>
+                <input type="file" id="cv">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>İletişim</legend>
+            <div>
+                <label for="email">E-Posta</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone">
+            </div>
+            <div>
+                <label for="adress">Adres</label>
+                <textarea name="adress" rows="5" cols="40"></textarea>
+            </div>
+        </fieldset>
+        <div>
+            <label for="password">Şifre</label>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <button type="submit">Kayıt ol</button>
+            <button type="reset">Temizle</button>
+        </div>
+    </form>
+    <h2>Html İnput Type</h2>
+
+    <h3>input type color</h3>
+    <input type="color">p
+    <h3>input type number</h3>
+    <input type="number">p
+    <h3>input type range</h3>
+    <input type="range">p
+    <h3>input type time</h3>
+    <input type="time">p
+    
+    
+    
+    <h3>readonly</h3>
+    <input type="text" value="Doe" readonly>p
+    
+    <h3>disabled</h3>
+    <input type="number" value="28" disabled>
+    <h3>placeholder</h3>
+    <input type="tel" placeholder="500 123 850">
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo</title>
+    <style>
+        a:active{
+            color: rgb(1, 146, 45);
+        }
+        /* bağlantıların renk değişimleri */
+        a:hover{
+            color: rgb(0, 0, 0);
+        }
+
+        
+        input:disabled{
+            background-color: aqua;
+        }
+        input:not(.name){
+            /* içine aldığı dosyayı yok sayar */
+            background-color: rgb(212, 26, 12) !important;
+            /* important ile öncelik sırasına alır */
+        }
+
+        li:nth-child(2n){
+            background-color: aqua;
+            /* seçtiğin satıra renk veriyorsun */
+        }
+        .c1::first-line{
+                color: aquamarine;
+                /* ilk satırı değiştirme özgürlüğü tanır */
+        }
+
+        .c2::before
+        ::after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background-color: blue;
+            border-radius: 10px;
+        }
+
+        .c2::before{
+            margin-right: 5px;
+        }
+
+        .c2::after{
+            margin-left: 5px;
+        }
+        ::selection{
+            /* sitede üzerine sağ tıkla geldiğimiz metinlerin rengini değiştirir */
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo</h1>
+    <h2>CSS Pseudo-Class</h2>
+    <h3>active</h3>
+    <p><a href="">Bağlantıya tıkla.</a></p>
+    <h3>hover</h3>
+    <p><a href="">Bağlantının üzerine gel.</a></p>
+    <h3>:disabled</h3>
+    <input type="text" disabled>
+    <h3>not(selector)</h3>
+    <input type="text" class="name">
+    <h3>nth-child(n)</h3>
+    <ul>
+        <li>İstanbul</li>
+        <li>Ankara</li>
+        <li>İzmir</li>
+        <li>Muğla</li>
+        <li>Antalya</li>
+    </ul>
+    <h2>CSS Pseudo Elements</h2>
+    <h3>::first-line</h3>
+    <p class="c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium atque tempore architecto nobis eum delectus laudantium est inventore, perferendis voluptatem commodi nam distinctio quis accusamus ipsa corporis nostrum repellendus maiores. In repudiandae est debitis repellat nulla rerum eius fuga maxime libero modi! Qui dolore itaque laboriosam. Beatae, obcaecati corporis!</p>
+   <h3>::before, ::after</h3>
+   <p class="c2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, aperiam non. Officia odio a totam ipsa commodi aspernatur, pariatur, debitis perferendis voluptatum eum itaque mollitia. Corporis maxime explicabo, consequatur omnis id dolore sunt nostrum hic facilis repellendus quasi optio, unde ea dolores quam, ad officia exercitationem reprehenderit! Ea, consectetur perspiciatis.</p>
+    <h3>::selection</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ea nisi adipisci, quisquam hic quidem eveniet ipsam quasi neque libero explicabo commodi blanditiis ad expedita ducimus ullam repudiandae, doloribus eos rerum voluptate id impedit numquam alias! Doloremque quo, nemo, aut, perferendis nam minus laudantium nisi aliquid molestiae nulla a voluptatum!</p>
+
+</body>
+</html>

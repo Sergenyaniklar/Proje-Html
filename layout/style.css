@@ -1,0 +1,180 @@
+:root{
+    --primary-color:brown;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    color: #282828;
+    background-color: whitesmoke;
+}
+
+p{
+    color: #484848;
+}
+
+.section{
+    padding: 8rem 0;
+}
+.section.white{
+    background-color: white;
+}
+.section-title{
+    font-weight: 600;
+    font-size: 45px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 2em;
+    
+}
+.section-title::first-letter{
+    color: var(--primary-color);
+}
+
+.button{
+    min-width: 140px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 38px;
+    padding: 0 24;
+    text-align: center;
+    background-color: black;
+    display: inline-block
+}
+
+a.button{
+    text-decoration: none;
+}
+
+.button:hover{
+background-color: var(--primary-color);
+}
+
+button.button{
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+}
+
+#header {
+        position:relative;
+        padding: 32px 0;
+        background-color: white;
+}
+
+#header .logo{
+    display: block;
+}
+
+#nav{
+    display: flex;
+    gap: 0 32px;
+    justify-content: end;
+    align-items: center;
+}
+
+
+#nav .nav-item {
+    color: black;
+    padding: 2px;
+    text-decoration: none;
+}
+#nav .nav-item:hover {
+    text-decoration: line-through;
+} 
+.hero-caption{
+    max-width: 585px;
+    margin-left: auto;
+    padding: 32px;
+}
+
+.hero-caption p{
+    font-size: 20px;
+    margin: 1.5em;
+}
+.hero-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#about{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+#about h4{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: -1.75em;
+}
+
+#about p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.blog{
+    margin: 8px 0;
+    background-color: white;
+}
+.blog-content{
+    padding: 24px ;
+}
+.blog img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.blog h3{
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.45;
+}
+
+.blog p{
+    line-height: 1.45;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.comment{
+    margin: 8px 0;
+    padding: 32px;
+    background-color: whitesmoke;
+}
+
+.comment img{
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.comment h3{
+    font-weight: 500;
+    margin: 0 0 0 8px;
+    display: inline-block;
+}
+
+.comment p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+#footer{
+    padding: 40px 0;
+    text-align: center;
+    background-color: whitesmoke;
+}

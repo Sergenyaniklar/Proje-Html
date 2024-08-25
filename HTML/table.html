@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table çalışmalar</title>
+    <style>
+      table, th, td{
+        border: 1px solid gray;
+      }
+      table{
+       border-collapse: collapse ;
+        /* birleştirme yapıyor */
+       min-width: 650px;
+      }
+      th{
+        height: 40px;
+        font-weight: bold;
+        background-color: bisque;
+        text-align: center;
+      }
+      td{
+        height: 40px;
+        font-size: 16px;
+      }
+      caption{
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 8px;
+      }
+    </style>
 </head>
 <body>
     <h1>Html Table</h1>
@@ -58,6 +83,8 @@
             </tr>
         </tfoot>
     </table>
+    
+    
     <table style="width:100%; border: 1px solid black;">
         <tr>
           <th style="border: 1px solid black; padding: 15px; text-align: left;">İsim</th>

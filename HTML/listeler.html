@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Listeler</title>
+    <style>
+     .c1{
+        list-style-type: square;
+     }
+     .c2{
+        list-style-type: upper-roman;
+     }
+     .c3{
+        padding-left: 0;
+     list-style-position: inside;
+     /* li nin başındaki paddingi silip bir bütün haline getirir */
+     background-color: bisque;
+     }
+     .c3 li{
+        margin-top: 2px;
+        /* li leri bir şekil içine alır */
+     background-color: rgb(184, 214, 135);
+     }
+
+     .c4{
+        list-style-position: inside;
+     background-color: bisque;
+     }
+     .c4 li{
+        margin-top: 5px;
+     background-color: rgb(184, 214, 135);
+     }
+    </style>
+</head>
+<body>
+    <h1>Unordered List</h1>
+    
+<ul>
+    <li>Elma</li>
+    <li>Süt</li>
+    <li>Yumurta</li>
+<ul>
+    <li>Elma</li>
+    <li>Süt</li>
+    <li>Yumurta</li>
+</ul>
+</ul>
+
+<ul class="c1">
+    <li>Elma</li>
+    <li>Süt</li>
+    <li>Yumurta</li>
+</ul>
+<ol class="c2">
+    <li>Postalarını kontrol et</li>
+    <li>Bugünün çalışmalarını bitir</li>
+    <li>Dinlenmeyi unutma</li>
+</ol>   
+
+<h1>Ordered List</h1>
+    
+<ol>
+    <li>Postalarını kontrol et</li>
+    <li>Bugünün çalışmalarını bitir</li>
+    <li>Dinlenmeyi unutma</li>
+<ul>
+    <li>Postalarını kontrol et</li>
+    <li>Bugünün çalışmalarını bitir</li>
+    <li>Dinlenmeyi unutma</li>
+</ul>
+</ol>
+<dl>
+    <dt>Market</dt>
+    <dd>Şok</dd>
+    <dt>Giyim Mağazası</dt>
+    <dd>Koton</dd>
+    <dt>Yemek Yeri</dt>
+    <dd>Dürümcü</dd>
+</dl>
+
+<h2>CSS List</h2>
+<h3>list-style-pozition</h3>
+<ul class="c3">
+    <li>Elma</li>
+    <li>Süt</li>
+    <li>Yumurta</li>
+</ul>
+<ol class="c4">
+    <li>Postalarını kontrol et</li>
+    <li>Bugünün çalışmalarını bitir</li>
+    <li>Dinlenmeyi unutma</li>
+</ol>   
+</body>
+</html>

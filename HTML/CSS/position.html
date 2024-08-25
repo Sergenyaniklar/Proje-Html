@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout: The Pozition</title>
+    <style>
+    .position{
+    border: 2px solid peru;
+    background-color: white;
+    }
+    .position.relative{
+        position: relative;
+    }
+    .position.absolute{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .position.sticky{
+        position: sticky;
+        top: 0;
+        left: 0;
+        border-color: rgb(46, 17, 209);
+    }
+    .position.fixed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        border-color: rgb(17, 209, 49);
+    }
+    </style>
+</head>
+<body>
+    <h1>CSS Layout: The Pozition property</h1>
+    
+    <h2>Pozition static</h2>
+    <!-- diğer ayarlamalardan etkilenmemesini sağlar -->
+    <div class="position">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, cupiditate! Tempora earum, quibusdam ipsa amet odit iusto! Animi velit excepturi tempora incidunt sed, quibusdam a illo iste consectetur, doloribus dolores minima eligendi quidem? Numquam aliquid illo at fugit velit pariatur a molestiae autem, reiciendis quis provident omnis quaerat labore distinctio adipisci deleniti recusandae sed. Natus fugit sed, voluptate, sit debitis quam vero velit maxime, error voluptas officiis voluptates quasi incidunt laborum maiores eius eveniet consequuntur dicta nihil dolorum? Temporibus, cumque. Quae quam odio ipsam voluptate pariatur provident sapiente fugit a. Sed, aliquid. Quos saepe odio neque id sapiente magni unde.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolor dolorem repellat repudiandae quaerat. Aut omnis vel nam neque sunt, magni officia minus, repudiandae placeat nemo ad ipsa maiores vero minima sapiente accusamus. Repudiandae quibusdam iusto dicta repellendus, velit odit adipisci. Minima hic commodi laudantium laborum voluptatibus, voluptas maxime nam.</p>
+        <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum modi accusamus odio animi ducimus similique possimus, quo commodi iusto labore? sit amet consectetur adipisicing elit. Incidunt, architecto? Tenetur accusamus cupiditate perferendis sit, incidunt quae tempore. Fugit, maiores.</p>
+    </div>
+    
+    <h2>Pozition relative</h2>
+    <div class="position relative"">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laudantium nulla! Quod, consequuntur! Suscipit voluptatum deleniti nostrum! Aspernatur saepe at recusandae porro rerum fuga non eligendi ab veniam laborum explicabo, aperiam cumque obcaecati necessitatibus molestiae deserunt delectus dicta deleniti laudantium dolore officia nostrum sapiente optio. Ipsa eligendi provident rerum consequatur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, rem facere. At non saepe nam quis facere sequi itaque excepturi! adipisicing elit. Incidunt, architecto? Tenetur accusamus cupiditate perferendis sit, incidunt quae tempore. Fugit, maiores.</p>
+    </div>
+     
+    <h2>Pozition: absolute</h2>
+        <div class="position relative">
+            <div class="position absolute">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque itaque esse ipsa reprehenderit deserunt aliquid quod ducimus dignissimos earum magni. Sit, quibusdam. Harum possimus tempore nemo architecto minima! Eveniet, porro.</p>
+            </div>
+        </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Pozition: sticky</h2>
+    <!-- metni ne kadar aşağıya inersen in üstte yapıştırır -->
+        <div class="position sticky">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque itaque esse ipsa reprehenderit deserunt aliquid quod ducimus dignissimos earum magni. Sit, quibusdam. Harum possimus tempore nemo architecto minima! Eveniet, porro.</p>
+        </div>
+    
+        <h2>Pozition: sticky</h2>
+    <!-- metni ne kadar aşağıya inersen in üstte yapıştırır -->
+        <div class="position sticky">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque itaque esse ipsa reprehenderit deserunt aliquid quod ducimus dignissimos earum magni. Sit, quibusdam. Harum possimus tempore nemo architecto minima! Eveniet, porro.</p>
+        </div>
+        <div class="position fixed">Bu bir sabit öğedir
+            <!-- ekrana sağa sola kutucuk içinde metin kalıcı yapıştırır -->
+        </div>
+
+    <div style="height: 10vb;"></div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore sit architecto neque corrupti quaerat!</p>
+</body>
+</html>
